@@ -1,11 +1,11 @@
-﻿import type { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Muhammed Sayed — Junior Front-End Developer',
     short_name: 'Muhammed Sayed',
     description:
-      'Junior Front-End Developer and UI/UX Designer — React.js, Next.js, TypeScript, Tailwind CSS, Figma. Giza, Egypt. Projects: VEYRA, Marketing Academy CRM, ORRA, Mira.',
+      'Junior Front-End Developer and UI/UX Designer — React.js, Next.js, TypeScript, Tailwind CSS, Figma. Giza, Egypt. Projects: VEYRA, ORRA, Mira.',
     start_url: '/',
     display: 'standalone',
     background_color: '#fcfcf9',

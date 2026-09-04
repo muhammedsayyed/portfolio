@@ -13,7 +13,7 @@ export const skills: Skill[] = [
     name: "React.js",
     category: "Frontend",
     level: "Core — Production projects",
-    description: "Component-based UI with hooks, React Router, and modern patterns. Used across ORRA, Mira, VEYRA and Marketing Academy CRM to build interactive, responsive interfaces.",
+    description: "Component-based UI with hooks, React Router, and modern patterns. Used across ORRA, Mira, and VEYRA to build interactive, responsive interfaces.",
     meta: "React.js • Vite • Hooks",
     highlight: true,
   },
@@ -29,7 +29,7 @@ export const skills: Skill[] = [
     name: "TypeScript",
     category: "Frontend",
     level: "Advanced — Typed projects",
-    description: "Type-safe development across full-stack projects (VEYRA, CRM, ORRA). Used for props, API contracts and data validation.",
+    description: "Type-safe development across full-stack and frontend projects (VEYRA, ORRA, Mira). Used for props, API contracts and data validation.",
     meta: "TypeScript • JavaScript (ES6+)",
   },
   {
@@ -59,8 +59,8 @@ export const skills: Skill[] = [
     name: "Node.js / Express / MongoDB",
     category: "Backend",
     level: "Hands-on — Full-stack projects",
-    description: "Backend development with Node.js, Express.js, REST APIs, MongoDB, Mongoose, Prisma and PostgreSQL. Built APIs for VEYRA and Marketing Academy CRM with JWT, RBAC and validation.",
-    meta: "Node.js • Express.js • REST APIs • MongoDB • Mongoose • Prisma • PostgreSQL",
+    description: "Backend development with Node.js, Express.js, REST APIs, MongoDB and Mongoose. Built APIs for VEYRA with JWT, RBAC and validation.",
+    meta: "Node.js • Express.js • REST APIs • MongoDB • Mongoose",
   },
   {
     name: "Git / Tools",

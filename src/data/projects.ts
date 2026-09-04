@@ -16,7 +16,7 @@ export type Project = {
   featured?: boolean
 }
 
-// Real portfolio projects — priority order: VEYRA, Marketing Academy CRM, ORRA, Mira
+// Real portfolio projects — priority order: VEYRA, ORRA, Mira
 // Centralized here for easy future updates of live URLs, descriptions, tech stacks
 export const projects: Project[] = [
   {
@@ -35,31 +35,12 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
     links: [{ label: "GitHub", href: "https://github.com/muhammedsayyed/VEYRA" }],
     color: "#EAECEE",
-    accent: "#0B0B0C",
-    image: "veyra",
+    accent: "#E0583A",
+    image: "/projects/veyra.png",
     featured: true,
   },
   {
     id: "02",
-    title: "Marketing Academy CRM",
-    subtitle: "Full-Stack CRM & Academy Management Platform",
-    category: "Full-Stack / CRM & Academy",
-    year: "06/2026 – 08/2026",
-    description:
-      "Built a full-stack CRM and Academy Management platform using React, TypeScript, Node.js, Express, Prisma, and PostgreSQL.",
-    problem:
-      "Marketing academies need to manage leads, students, courses and operations in one secure, role-aware system.",
-    solution:
-      "Implemented lead management, sales follow-ups, lead-to-student conversion, student management, role-based access control (RBAC), course & batch management, QR-based attendance, financial tracking, reporting and secure video streaming with Prisma and PostgreSQL.",
-    role: "Full-Stack Developer — React, TypeScript, Node.js, Express, Prisma, PostgreSQL",
-    stack: ["React", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL"],
-    links: [{ label: "GitHub", href: "https://github.com/muhammedsayyed/crm-market-agancy" }],
-    color: "#F2EEE6",
-    accent: "#FF3B30",
-    image: "marketing-crm",
-  },
-  {
-    id: "03",
     title: "ORRA",
     subtitle: "Premium E-Commerce Platform",
     category: "Frontend / E-Commerce",
@@ -75,10 +56,10 @@ export const projects: Project[] = [
     links: [{ label: "GitHub", href: "https://github.com/muhammedsayyed/ORRA---Premium-E-Commerce-Platform" }],
     color: "#E8E6F0",
     accent: "#6B5CFF",
-    image: "orra",
+    image: "/projects/orra.png",
   },
   {
-    id: "04",
+    id: "03",
     title: "Mira",
     subtitle: "Social Micro-Blogging Platform",
     category: "Frontend / Social Platform",
@@ -93,7 +74,7 @@ export const projects: Project[] = [
     stack: ["React.js", "Vite", "Tailwind CSS", "REST API"],
     links: [{ label: "GitHub", href: "https://github.com/muhammedsayyed/Mira---Social-Micro-Blogging-Platform" }],
     color: "#F5F0E8",
-    accent: "#D97706",
-    image: "mira",
+    accent: "#FF532A",
+    image: "/projects/mira.png",
   },
 ]

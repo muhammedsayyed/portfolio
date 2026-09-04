@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Muhammed Sayed — Junior Front-End Developer | React.js, Next.js & UI/UX",
     description:
-      "Junior Front-End Developer and UI/UX Designer based in Giza, Egypt. React.js, Next.js, TypeScript, Tailwind CSS, Figma. Full-stack projects: VEYRA, Marketing Academy CRM, ORRA, Mira.",
+      "Junior Front-End Developer and UI/UX Designer based in Giza, Egypt. React.js, Next.js, TypeScript, Tailwind CSS, Figma. Full-stack and frontend projects: VEYRA, ORRA, Mira.",
     url: "https://portfolio-beta-ten-y81ydngqww.vercel.app",
     siteName: "Muhammed Sayed Portfolio",
     type: "website",

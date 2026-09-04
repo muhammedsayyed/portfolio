@@ -39,11 +39,11 @@ export default function Projects() {
           </div>
           <div data-work-header className="lg:max-w-[48ch]">
             <p className="font-mono text-[13px] leading-6 text-[var(--muted-2)]">
-              Four production projects — VEYRA, Marketing Academy CRM, ORRA and Mira. Full-stack and frontend work with real APIs, auth and deployments. Data centralized in{" "}
+              Three production projects — VEYRA, ORRA and Mira. Full-stack and frontend work with real APIs, auth and deployments. Data centralized in{" "}
               <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">src/data/projects.ts</span> & <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">src/data/site.ts</span>.
             </p>
             <div className="mt-4 flex flex-wrap gap-2 font-mono text-[11px] tracking-[0.14em]">
-              <span className="rounded-full border border-[var(--line)] bg-white px-3 py-1">4 PROJECTS</span>
+              <span className="rounded-full border border-[var(--line)] bg-white px-3 py-1">3 PROJECTS</span>
               <span className="rounded-full bg-[var(--ink)] text-white px-3 py-1">03/2026 — 08/2026</span>
               <span className="rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-3 py-1 text-[var(--muted-2)]">GITHUB LINKED</span>
             </div>
@@ -54,7 +54,7 @@ export default function Projects() {
 
         <div className="mt-10 md:mt-12 space-y-10 md:space-y-14">
           {projects.map((p, i) => (
-            <ProjectCard key={p.id} project={p} index={i} />
+            <ProjectCard key={p.id} project={p} index={i} total={projects.length} />
           ))}
         </div>
 
@@ -67,7 +67,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="flex flex-wrap gap-2">
-            <span className="rounded-full bg-white border border-[var(--line)] px-4 py-2 font-mono text-xs tracking-widest">4 REAL PROJECTS</span>
+            <span className="rounded-full bg-white border border-[var(--line)] px-4 py-2 font-mono text-xs tracking-widest">3 REAL PROJECTS</span>
             <span className="rounded-full bg-[var(--ink)] text-white px-4 py-2 font-mono text-xs tracking-widest">CENTRALIZED DATA</span>
           </div>
         </div>
