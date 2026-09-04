@@ -23,20 +23,33 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Frontend Developer — React / Next.js / UI Engineering",
+  title: "Muhammed Sayed — Junior Front-End Developer | React.js, Next.js & UI/UX",
   description:
-    "Frontend Developer specializing in React, Next.js, TypeScript and crafted interfaces. UI/UX obsessed, motion-driven, performance-minded. Currently expanding into backend.",
-  metadataBase: new URL("https://example.com"),
+    "Junior Front-End Developer and UI/UX Designer passionate about building modern, responsive, and user-friendly web experiences. React.js, Next.js, TypeScript, Tailwind CSS, Figma. Currently training Backend at Route Academy. Giza, Egypt.",
+  metadataBase: new URL("https://portfolio-beta-ten-y81ydngqww.vercel.app"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
-    title: "Frontend Developer — React / Next.js / UI Engineering",
+    title: "Muhammed Sayed — Junior Front-End Developer | React.js, Next.js & UI/UX",
     description:
-      "Premium frontend portfolio — React, TypeScript, Next.js, Tailwind, motion. Built with obsessive attention to typography, interaction and performance.",
+      "Junior Front-End Developer and UI/UX Designer based in Giza, Egypt. React.js, Next.js, TypeScript, Tailwind CSS, Figma. Full-stack projects: VEYRA, Marketing Academy CRM, ORRA, Mira.",
+    url: "https://portfolio-beta-ten-y81ydngqww.vercel.app",
+    siteName: "Muhammed Sayed Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Frontend Developer — React / Next.js / UI Engineering",
-    description: "Crafting premium, interactive interfaces with React & Next.js.",
+    title: "Muhammed Sayed — Junior Front-End Developer",
+    description: "Junior Front-End Developer and UI/UX Designer — React.js, Next.js, TypeScript, Tailwind CSS. Giza, Egypt.",
   },
 }
 

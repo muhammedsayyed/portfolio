@@ -39,13 +39,13 @@ export default function Projects() {
           </div>
           <div data-work-header className="lg:max-w-[48ch]">
             <p className="font-mono text-[13px] leading-6 text-[var(--muted-2)]">
-              Four placeholder studies — replace with your real work. Each card is a system: problem, solution, role and stack. Hover for tilt, scroll for reveal. Data lives in{" "}
-              <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">src/data/projects.ts</span>.
+              Four production projects — VEYRA, Marketing Academy CRM, ORRA and Mira. Full-stack and frontend work with real APIs, auth and deployments. Data centralized in{" "}
+              <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">src/data/projects.ts</span> & <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">src/data/site.ts</span>.
             </p>
             <div className="mt-4 flex flex-wrap gap-2 font-mono text-[11px] tracking-[0.14em]">
-              <span className="rounded-full border border-[var(--line)] bg-white px-3 py-1">4 CASES</span>
-              <span className="rounded-full bg-[var(--ink)] text-white px-3 py-1">2024 — 2026</span>
-              <span className="rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-3 py-1 text-[var(--muted-2)]">EASILY EDITABLE</span>
+              <span className="rounded-full border border-[var(--line)] bg-white px-3 py-1">4 PROJECTS</span>
+              <span className="rounded-full bg-[var(--ink)] text-white px-3 py-1">03/2026 — 08/2026</span>
+              <span className="rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-3 py-1 text-[var(--muted-2)]">GITHUB LINKED</span>
             </div>
           </div>
         </div>
@@ -60,15 +60,15 @@ export default function Projects() {
 
         <div className="mt-12 rounded-[24px] border border-dashed border-[var(--line-strong)] bg-[var(--paper-2)] p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.2em] text-[var(--muted)]">ADDING YOUR WORK</div>
-            <div className="mt-2 font-[var(--font-display)] text-[22px] leading-tight">Replace these placeholders in seconds.</div>
+            <div className="font-mono text-[11px] tracking-[0.2em] text-[var(--muted)]">UPDATING PROJECTS</div>
+            <div className="mt-2 font-[var(--font-display)] text-[22px] leading-tight">Live URLs easy to add later.</div>
             <div className="mt-1 font-mono text-xs leading-5 text-[var(--muted-2)] max-w-[60ch]">
-              Open <span className="font-medium text-[var(--ink)]">src/data/projects.ts</span> — duplicate an entry, change title, stack, and links. No layout changes needed. Images are generated — drop in real screenshots when ready.
+              Update <span className="font-medium text-[var(--ink)]">src/data/site.ts</span> & <span className="font-medium text-[var(--ink)]">src/data/projects.ts</span> — add Vercel URL to <span className="font-mono bg-white px-1 rounded border">links</span>. GitHub links are already live.
             </div>
           </div>
           <div className="flex flex-wrap gap-2">
-            <span className="rounded-full bg-white border border-[var(--line)] px-4 py-2 font-mono text-xs tracking-widest">DATA-DRIVEN</span>
-            <span className="rounded-full bg-[var(--ink)] text-white px-4 py-2 font-mono text-xs tracking-widest">TILT + PARALLAX</span>
+            <span className="rounded-full bg-white border border-[var(--line)] px-4 py-2 font-mono text-xs tracking-widest">4 REAL PROJECTS</span>
+            <span className="rounded-full bg-[var(--ink)] text-white px-4 py-2 font-mono text-xs tracking-widest">CENTRALIZED DATA</span>
           </div>
         </div>
       </div>

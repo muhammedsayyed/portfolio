@@ -71,14 +71,14 @@ export default function Hero() {
         <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 md:px-10 pt-28 md:pt-32 pb-6 flex flex-wrap gap-4 items-center justify-between text-[11px] font-mono tracking-[0.2em] text-[var(--muted-2)]">
           <div data-hero-meta className="flex items-center gap-3">
             <span className="hidden sm:inline-flex items-center gap-2">
-              <span className="size-1.5 bg-[var(--accent)] rounded-full" /> PORTFOLIO / 2026
+              <span className="size-1.5 bg-[var(--accent)] rounded-full" /> GIZA, EGYPT — 2026
             </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-white px-3 py-1.5 text-[10px]">
               <span className="size-2 rounded-full bg-emerald-500 animate-pulse" /> OPEN TO COLLABORATION
             </span>
           </div>
           <div data-hero-meta className="flex items-center gap-6">
-            <span className="hidden md:inline">BASED — REMOTE / WORLDWIDE</span>
+            <span className="hidden md:inline">BASED — GIZA / REMOTE</span>
             <span className="hidden md:inline">
               TIME — <span className="text-[var(--ink)]" suppressHydrationWarning>{time}</span>
             </span>
@@ -112,11 +112,11 @@ export default function Hero() {
             <div className="mt-6 md:mt-10 grid grid-cols-12 gap-6 items-start">
               <div data-hero-meta className="col-span-12 md:col-span-7">
                 <p className="font-[var(--font-display)] text-[22px] md:text-[26px] leading-[1.15] tracking-tight text-balance">
-                  I design & build <span className="italic font-light">premium</span> interfaces with{" "}
-                  <span className="underline decoration-[var(--accent)] decoration-2 underline-offset-4">intent</span>. React · TypeScript · Next.js · motion, shipped with care.
+                  Junior Front-End Developer and <span className="italic font-light">UI/UX Designer</span> passionate about building{" "}
+                  <span className="underline decoration-[var(--accent)] decoration-2 underline-offset-4">modern, responsive</span> web experiences.
                 </p>
                 <p className="mt-4 font-mono text-xs leading-6 text-[var(--muted-2)] max-w-[52ch]">
-                  Obsessed with typography, performance, and the tiny interactions that make software feel alive. Currently deepening backend to own the full product — from pixel to API.
+                  Skilled in React.js, Next.js, JavaScript, TypeScript, Tailwind CSS, and Figma, with hands-on experience developing interactive web applications and translating UI designs into functional interfaces. Currently training in Backend Development with Node.js, Express.js, MongoDB, and REST APIs at Route Academy.
                 </p>
 
                 <div className="mt-7 flex flex-wrap gap-3">
@@ -144,7 +144,7 @@ export default function Hero() {
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-2 font-mono text-[11px] tracking-widest">
-                  {["React Expert", "TypeScript", "Next.js", "Tailwind", "Framer / GSAP", "UI Systems"].map((t) => (
+                  {["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Figma", "REST APIs"].map((t) => (
                     <span key={t} className="rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-3 py-1 text-[var(--muted-2)]">
                       {t}
                     </span>
@@ -200,7 +200,7 @@ export default function Hero() {
               >
                 <Image
                   src="/me.png"
-                  alt="Portrait — Frontend Developer"
+                  alt="Muhammed Sayed — Junior Front-End Developer"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -212,7 +212,7 @@ export default function Hero() {
               </div>
 
               <div data-hero-float className="absolute top-4 left-4 flex gap-2">
-                <span className="rounded-full bg-white/90 backdrop-blur px-3 py-1.5 font-mono text-[10px] tracking-[0.18em] border border-white shadow-sm">REACT — 2026</span>
+                <span className="rounded-full bg-white/90 backdrop-blur px-3 py-1.5 font-mono text-[10px] tracking-[0.18em] border border-white shadow-sm">GIZA — 2026</span>
                 <span className="hidden sm:inline-flex rounded-full bg-[var(--ink)] text-white px-3 py-1.5 font-mono text-[10px] tracking-[0.18em]">AVAILABLE</span>
               </div>
 
@@ -221,7 +221,7 @@ export default function Hero() {
                   <span className="size-10 rounded-full bg-[var(--ink)] text-white grid place-items-center text-sm">◆</span>
                   <div className="leading-tight">
                     <div className="font-mono text-[10px] tracking-[0.2em] text-[var(--muted)]">CURRENTLY</div>
-                    <div className="font-medium text-sm leading-none">Learning Backend — Node & DBs</div>
+                    <div className="font-medium text-sm leading-none">Training Backend @ Route Academy</div>
                   </div>
                 </div>
                 <span className="hidden sm:grid size-12 rounded-full bg-[var(--accent)] text-white place-items-center text-xl shadow-lg">↗</span>

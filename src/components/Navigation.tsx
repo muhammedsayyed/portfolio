@@ -65,10 +65,10 @@ export default function Navigation() {
             aria-label="Primary"
           >
             <a href="#hero" className="flex items-center gap-3 group">
-              <span className="size-9 rounded-full bg-[var(--ink)] text-[var(--paper)] grid place-items-center font-mono text-[11px] tracking-widest">FE</span>
+              <span className="size-9 rounded-full bg-[var(--ink)] text-[var(--paper)] grid place-items-center font-mono text-[11px] tracking-widest">MS</span>
               <span className="hidden sm:flex flex-col leading-none">
-                <span className="font-mono text-[11px] tracking-[0.24em] text-[var(--muted-2)] group-hover:text-[var(--ink)] transition-colors">FRONTEND</span>
-                <span className="font-[var(--font-display)] text-[17px] leading-none -mt-0.5">Engineer — 2026</span>
+                <span className="font-mono text-[11px] tracking-[0.24em] text-[var(--muted-2)] group-hover:text-[var(--ink)] transition-colors">MUHAMMED SAYED</span>
+                <span className="font-[var(--font-display)] text-[17px] leading-none -mt-0.5">Giza — 2026</span>
               </span>
             </a>
 
@@ -158,11 +158,11 @@ export default function Navigation() {
               </div>
 
               <div className="pt-8 flex flex-col gap-4 font-mono text-xs tracking-widest text-[var(--muted-2)]">
-                <a href="mailto:hello@example.com" className="text-[var(--ink)] text-lg tracking-normal font-sans">hello@example.com</a>
+                <a href="mailto:muhammmmed.sayed@gmail.com" className="text-[var(--ink)] text-lg tracking-normal font-sans">muhammmmed.sayed@gmail.com</a>
                 <div className="flex gap-4">
-                  <a href="#" className="underline decoration-[var(--line-strong)] underline-offset-4 hover:text-[var(--ink)]">GITHUB</a>
-                  <a href="#" className="underline decoration-[var(--line-strong)] underline-offset-4 hover:text-[var(--ink)]">LINKEDIN</a>
-                  <a href="#" className="underline decoration-[var(--line-strong)] underline-offset-4 hover:text-[var(--ink)]">READ.CV</a>
+                  <a href="https://github.com/muhammedsayyed" target="_blank" className="underline decoration-[var(--line-strong)] underline-offset-4 hover:text-[var(--ink)]">GITHUB</a>
+                  <a href="https://linkedin.com/in/muhammed-sayed-420775405" target="_blank" className="underline decoration-[var(--line-strong)] underline-offset-4 hover:text-[var(--ink)]">LINKEDIN</a>
+                  <a href="tel:01012444365" className="underline decoration-[var(--line-strong)] underline-offset-4 hover:text-[var(--ink)]">01012444365</a>
                 </div>
               </div>
             </div>
