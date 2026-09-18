@@ -44,7 +44,7 @@ export default function About() {
           <div className="col-span-12 lg:col-span-4">
             <div className="lg:sticky lg:top-28">
               <div className="flex items-center gap-3 font-mono text-[11px] tracking-[0.28em] text-[var(--muted)]">
-                <span className="size-1.5 bg-[var(--accent)] rounded-full" /> 01 — ABOUT
+                <span className="size-1.5 bg-[var(--accent)] rounded-full" /> 01 — STUDIO
               </div>
 
               <div data-about-num-wrap className="overflow-hidden mt-6">
@@ -54,25 +54,25 @@ export default function About() {
               </div>
 
               <h2 className="font-[var(--font-display)] text-[42px] md:text-[54px] leading-[0.9] tracking-[-0.03em] mt-2">
-                Muhammed
+                AXIOM
                 <br />
-                <span className="italic font-light text-[var(--muted-2)]">Sayed.</span>
+                <span className="italic font-light text-[var(--muted-2)]">Studio.</span>
               </h2>
               <div className="mt-3 font-mono text-xs tracking-[0.18em] text-[var(--muted-2)]">
-                Junior Front-End Developer | React.js, Next.js & UI/UX
+                Software & Digital Product Studio
               </div>
-              <div className="mt-1 font-mono text-xs tracking-wide text-[var(--muted)]">Giza, Egypt — Available for work</div>
+              <div className="mt-1 font-mono text-xs tracking-wide text-[var(--muted)]">Cairo, Egypt — Remote Worldwide</div>
 
               <div data-about-line className="h-px bg-[var(--ink)] mt-6 origin-left" />
 
               <div className="mt-6 grid grid-cols-2 gap-4 font-mono text-xs">
                 <div className="rounded-2xl border border-[var(--line)] bg-white p-4">
                   <div className="text-[11px] tracking-[0.18em] text-[var(--muted)]">FOCUS</div>
-                  <div className="mt-2 font-medium text-[13px] leading-tight text-[var(--ink)]">Modern, responsive & user-friendly web experiences</div>
+                  <div className="mt-2 font-medium text-[13px] leading-tight text-[var(--ink)]">High-performance products that are useful and precise</div>
                 </div>
                 <div className="rounded-2xl border border-[var(--line)] bg-[var(--paper-2)] p-4">
-                  <div className="text-[11px] tracking-[0.18em] text-[var(--muted)]">NOW</div>
-                  <div className="mt-2 font-medium text-[13px] leading-tight">Training Backend @ Route Academy — Node, Express, MongoDB</div>
+                  <div className="text-[11px] tracking-[0.18em] text-[var(--muted)]">APPROACH</div>
+                  <div className="mt-2 font-medium text-[13px] leading-tight">Design + Engineering as one team, from idea to launch</div>
                 </div>
               </div>
 
@@ -88,35 +88,35 @@ export default function About() {
               <div className="grid md:grid-cols-[1.2fr_0.9fr] gap-0">
                 <div className="p-8 md:p-10">
                   <div data-about-reveal className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--paper)] px-3 py-1 font-mono text-[11px] tracking-[0.18em] text-[var(--muted-2)]">
-                    <span className="size-1.5 rounded-full bg-emerald-500" /> JUNIOR FRONT-END DEVELOPER
+                    <span className="size-1.5 rounded-full bg-emerald-500" /> SOFTWARE & DIGITAL PRODUCT STUDIO
                   </div>
 
                   <p data-about-reveal className="mt-6 font-[var(--font-display)] text-[22px] md:text-[26px] leading-[1.25] tracking-tight">
-                    Junior Front-End Developer and UI/UX Designer passionate about building{" "}
-                    <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">modern, responsive</span> and user-friendly web experiences.
+                    We design and build{" "}
+                    <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">modern, high-performance</span> digital products for ambitious teams.
                   </p>
 
                   <div data-about-reveal className="mt-6 space-y-4 font-mono text-[13px] leading-7 text-[var(--muted-2)]">
                     <p>
-                      Skilled in <span className="text-[var(--ink)] font-medium">React.js, Next.js, JavaScript, TypeScript, Tailwind CSS, and Figma</span>, with hands-on experience developing interactive web applications and translating UI designs into functional interfaces.
+                      AXIOM is a studio at the intersection of <span className="text-[var(--ink)] font-medium">design and engineering</span>. We don&apos;t hand off — we work as one product team from discovery to deployment, shaping business goals into software people enjoy using.
                     </p>
                     <p>
-                      I care about clean code, thoughtful design and the details that make software feel alive — baseline grids, focus states and empty states. I work in Figma but prototype in code, building responsive interfaces that are both beautiful and usable.
+                      Quality is our system: design systems, accessible interactions, thoughtful empty states and baseline grids — all prototyped in code and validated with real data.
                     </p>
                     <p>
-                      Currently training in Backend Development with{" "}
+                      Our stack is{" "}
                       <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-2.5 py-0.5 text-xs tracking-wide text-[var(--ink)]">
-                        Node · Express · MongoDB · REST APIs
+                        React · Next.js · TypeScript · Node · Python · PostgreSQL
                       </span>{" "}
-                      at Route Academy to own the full product — from pixel to API.
+                      — chosen for performance, reliability and product velocity.
                     </p>
                   </div>
 
                   <div data-about-reveal className="mt-8 grid grid-cols-3 gap-4 border-t border-[var(--line)] pt-6">
                     {[
-                      { k: "Clean", v: "Clean code & thoughtful design" },
-                      { k: "Responsive", v: "Modern, user-friendly flows" },
-                      { k: "Learning", v: "Continuous learning mindset" },
+                      { k: "Precise", v: "Craft, systems and edge cases handled" },
+                      { k: "Performant", v: "Fast, accessible, reliable" },
+                      { k: "Product", v: "Design + build, together" },
                     ].map((s) => (
                       <div key={s.k}>
                         <div className="font-mono text-[11px] tracking-[0.18em] text-[var(--muted)]">{s.k.toUpperCase()}</div>
@@ -125,35 +125,37 @@ export default function About() {
                     ))}
                   </div>
 
-                  {/* Education block */}
+                  {/* Capabilities block */}
                   <div data-about-reveal className="mt-8 rounded-2xl border border-[var(--line)] bg-[var(--paper)] p-5">
-                    <div className="font-mono text-[10px] tracking-[0.2em] text-[var(--muted)]">EDUCATION</div>
-                    <div className="mt-2 font-medium text-sm leading-tight">Bachelor of Business Information Systems (BIS)</div>
-                    <div className="font-mono text-xs text-[var(--muted-2)]">Higher Institute for Advanced Studies – Management Information Systems</div>
-                    <div className="mt-1 font-mono text-xs tracking-wide text-[var(--muted)]">09/2022 – 06/2026 • Giza, Egypt</div>
-                    <div className="mt-2 font-mono text-xs leading-5 text-[var(--muted-2)]">
-                      Focus on information systems, business technology, and software applications.
+                    <div className="font-mono text-[10px] tracking-[0.2em] text-[var(--muted)]">CAPABILITIES</div>
+                    <div className="mt-3 flex flex-wrap gap-2 font-mono text-xs">
+                      {["Web Development", "E-Commerce", "Custom Software", "Digital Product Design", "Mobile Apps", "API & Backend"].map((c) => (
+                        <span key={c} className="rounded-full border border-[var(--line)] bg-white px-3 py-1 tracking-wide">{c}</span>
+                      ))}
+                    </div>
+                    <div className="mt-3 font-mono text-xs leading-5 text-[var(--muted-2)]">
+                      End-to-end: product strategy, design systems, frontend and backend engineering, integrations and launch.
                     </div>
                   </div>
                   <div data-about-reveal className="mt-3 rounded-2xl border border-[var(--line)] bg-white p-5">
-                    <div className="font-mono text-[10px] tracking-[0.2em] text-[var(--muted)]">TRAINING</div>
-                    <div className="mt-2 font-medium text-sm leading-tight">Front-End Development — Route Academy</div>
-                    <div className="font-mono text-xs text-[var(--muted-2)]">09/2025 – 03/2026 • Dokki, Egypt</div>
-                    <div className="mt-2 font-mono text-xs leading-5 text-[var(--muted-2)]">
-                      6-month program covering HTML5, CSS3, JavaScript, React.js, responsive web design, UI/UX fundamentals. Certificate of Completion.
+                    <div className="font-mono text-[10px] tracking-[0.2em] text-[var(--muted)]">AXIOM STACK</div>
+                    <div className="mt-3 flex flex-wrap gap-2 font-mono text-[11px] tracking-wide">
+                      {["React", "Next.js", "TypeScript", "Node.js", "Python", "PostgreSQL", "MongoDB", "REST API", "GraphQL", "GSAP", "Motion", "Figma"].map((t) => (
+                        <span key={t} className="rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-2.5 py-1 text-[var(--ink-soft)]">{t}</span>
+                      ))}
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-[var(--paper-2)] border-t md:border-t-0 md:border-l border-[var(--line)] p-8 md:p-8 flex flex-col">
-                  <div className="font-mono text-[11px] tracking-[0.24em] text-[var(--muted)]">HOW I WORK</div>
+                  <div className="font-mono text-[11px] tracking-[0.24em] text-[var(--muted)]">HOW WE WORK</div>
 
                   <div className="mt-6 space-y-5">
                     {[
-                      { n: "01", t: "Design in Figma", d: "Wireframing & prototyping user-friendly flows." },
-                      { n: "02", t: "Build in React", d: "Translating UI into responsive, functional interfaces." },
-                      { n: "03", t: "Integrate APIs", d: "REST APIs, JWT auth, validation — real data, not mocks." },
-                      { n: "04", t: "Learn backend", d: "Node, Express, MongoDB @ Route Academy to close the loop." },
+                      { n: "01", t: "Discover & Define", d: "Goals, users and constraints — shaping the right problem to solve." },
+                      { n: "02", t: "Design in Systems", d: "Figma to design system — flows, components and prototypes in code." },
+                      { n: "03", t: "Build & Integrate", d: "React/Next.js frontend, Node/Python APIs, databases — real data, not mocks." },
+                      { n: "04", t: "Ship & Iterate", d: "Launch, measure and improve — continuously." },
                     ].map((step) => (
                       <div data-about-reveal key={step.n} className="flex gap-4">
                         <span className="font-mono text-xs tracking-widest text-[var(--muted)] mt-0.5">{step.n}</span>
@@ -167,10 +169,10 @@ export default function About() {
 
                   <div data-about-reveal className="mt-auto pt-8">
                     <div className="rounded-2xl bg-[var(--ink)] text-[var(--paper)] p-5">
-                      <div className="font-mono text-[10px] tracking-[0.2em] opacity-60">CURRENTLY</div>
-                      <div className="mt-3 font-[var(--font-display)] text-[18px] leading-tight">Training Backend to own features end-to-end.</div>
+                      <div className="font-mono text-[10px] tracking-[0.2em] opacity-60">STUDIO PRINCIPLE</div>
+                      <div className="mt-3 font-[var(--font-display)] text-[18px] leading-tight">Design and engineering, shipped together.</div>
                       <div className="mt-2 font-mono text-xs leading-5 opacity-70">
-                        Frontend-first, but expanding into Node.js, Express, REST APIs and database design for full product ownership.
+                        No hand-offs. We prototype in code, validate with users, and engineer for performance from the first component.
                       </div>
                     </div>
                   </div>
@@ -178,9 +180,9 @@ export default function About() {
               </div>
 
               <div className="grid grid-cols-12 border-t border-[var(--line)] text-center font-mono text-xs tracking-widest divide-x divide-[var(--line)]">
-                <div className="col-span-4 py-4 bg-[var(--paper)]">CLEAN CODE</div>
-                <div className="col-span-4 py-4 bg-white">THOUGHTFUL DESIGN</div>
-                <div className="col-span-4 py-4 bg-[var(--paper-2)]">RESPONSIVE UX</div>
+                <div className="col-span-4 py-4 bg-[var(--paper)]">PRECISE</div>
+                <div className="col-span-4 py-4 bg-white">PERFORMANT</div>
+                <div className="col-span-4 py-4 bg-[var(--paper-2)]">PRODUCT-MINDED</div>
               </div>
             </div>
 
@@ -189,9 +191,9 @@ export default function About() {
               <span className="hidden md:block font-[var(--font-display)] text-[64px] leading-none text-[var(--ink)]/10">“</span>
               <div>
                 <p className="font-[var(--font-display)] text-[20px] md:text-[22px] leading-[1.3] tracking-tight">
-                  Passionate about <span className="italic">clean code</span>, thoughtful design and continuous learning — building interfaces that are modern and user-friendly.
+                  We believe in <span className="italic">useful software</span> — products that are fast, honest and a pleasure to use, built with systems that scale.
                 </p>
-                <div className="mt-3 font-mono text-xs tracking-[0.18em] text-[var(--muted)]">— MUHAMMED SAYED • GIZA, EGYPT</div>
+                <div className="mt-3 font-mono text-xs tracking-[0.18em] text-[var(--muted)]">— AXIOM • SOFTWARE & DIGITAL PRODUCT STUDIO</div>
               </div>
             </div>
           </div>

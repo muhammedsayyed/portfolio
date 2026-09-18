@@ -181,7 +181,7 @@ export default function ProjectCard({
                 <div className="mt-1.5 font-mono text-xs leading-5 text-[var(--ink-soft)]">{project.problem}</div>
               </div>
               <div className="rounded-2xl border border-[var(--line)] bg-white p-4">
-                <div className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">SOLUTION & MY ROLE</div>
+                <div className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">SOLUTION & STUDIO ROLE</div>
                 <div className="mt-1.5 font-mono text-xs leading-5 text-[var(--ink-soft)]">{project.solution}</div>
                 <div className="mt-2 inline-flex rounded-full bg-[var(--ink)] text-white px-2.5 py-1 font-mono text-[11px] tracking-wide">
                   {project.role}
@@ -225,7 +225,7 @@ export default function ProjectCard({
               <span>
                 0{index + 1} — 0{total}
               </span>
-              <span className="hidden sm:inline">CRAFTED INTERFACE • {project.year}</span>
+              <span className="hidden sm:inline">AXIOM STUDIO • {project.year}</span>
               <span className="size-2 rounded-full" style={{ background: project.accent }} />
             </div>
           </div>
@@ -249,6 +249,7 @@ export default function ProjectCard({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setLightboxOpen(false)}
+            data-lightbox
             className="fixed inset-0 z-[999] bg-black/85 backdrop-blur-md flex items-center justify-center p-4 md:p-8 cursor-zoom-out"
           >
             <motion.div

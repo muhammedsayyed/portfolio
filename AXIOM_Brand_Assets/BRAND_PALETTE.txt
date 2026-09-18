@@ -1,0 +1,1 @@
+AXIOM — current approved website palette\n\nINK: #0B0B0C\nPAPER: #FCFCF9\nWARM / paper-2: #F2EEE6\nRED / accent: #FF3B30\nLINE: #E8E6E1\nLINE-STRONG: #D6D2C8\nMUTED: #9A9AA0\nMUTED-2: #6B6B70\nINK-SOFT: #1A1A1E\n

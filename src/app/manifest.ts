@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Muhammed Sayed — Junior Front-End Developer',
-    short_name: 'Muhammed Sayed',
+    name: 'AXIOM — Software & Digital Product Studio',
+    short_name: 'AXIOM',
     description:
-      'Junior Front-End Developer and UI/UX Designer — React.js, Next.js, TypeScript, Tailwind CSS, Figma. Giza, Egypt. Projects: VEYRA, ORRA, Mira.',
+      'AXIOM is a software and digital product studio that designs and builds modern digital products and experiences. Web Development, E-Commerce, Custom Software, Digital Product Design, Mobile Apps, API & Backend.',
     start_url: '/',
     display: 'standalone',
     background_color: '#fcfcf9',
@@ -17,9 +17,9 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/x-icon',
       },
       {
-        src: '/icon.svg',
-        sizes: 'any',
-        type: 'image/svg+xml',
+        src: '/icon.png',
+        sizes: '32x32',
+        type: 'image/png',
       },
       {
         src: '/favicon.png',

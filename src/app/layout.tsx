@@ -23,14 +23,14 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Muhammed Sayed — Junior Front-End Developer | React.js, Next.js & UI/UX",
+  title: "AXIOM — Software & Digital Product Studio",
   description:
-    "Junior Front-End Developer and UI/UX Designer passionate about building modern, responsive, and user-friendly web experiences. React.js, Next.js, TypeScript, Tailwind CSS, Figma. Currently training Backend at Route Academy. Giza, Egypt.",
-  metadataBase: new URL("https://portfolio-beta-ten-y81ydngqww.vercel.app"),
+    "AXIOM is a software and digital product studio that designs and builds modern digital products and experiences. Web Development, E-Commerce, Custom Software, Digital Product Design, Mobile Applications, API & Backend Systems. React, Next.js, TypeScript, Node.js, Python, PostgreSQL.",
+  metadataBase: new URL("https://axiom.studio"),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
       { url: "/favicon.png", type: "image/png", sizes: "32x32" },
       { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
       { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
@@ -39,17 +39,26 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
   },
   openGraph: {
-    title: "Muhammed Sayed — Junior Front-End Developer | React.js, Next.js & UI/UX",
+    title: "AXIOM — Software & Digital Product Studio",
     description:
-      "Junior Front-End Developer and UI/UX Designer based in Giza, Egypt. React.js, Next.js, TypeScript, Tailwind CSS, Figma. Full-stack and frontend projects: VEYRA, ORRA, Mira.",
-    url: "https://portfolio-beta-ten-y81ydngqww.vercel.app",
-    siteName: "Muhammed Sayed Portfolio",
+      "AXIOM designs and builds high-performance websites, digital products and custom software for ambitious teams. Web, E-Commerce, Mobile, API & Backend.",
+    url: "https://axiom.studio",
+    siteName: "AXIOM",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "AXIOM — Software Development Studio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muhammed Sayed — Junior Front-End Developer",
-    description: "Junior Front-End Developer and UI/UX Designer — React.js, Next.js, TypeScript, Tailwind CSS. Giza, Egypt.",
+    title: "AXIOM — Software & Digital Product Studio",
+    description: "AXIOM designs and builds high-performance websites, digital products and custom software for ambitious teams.",
+    images: ["/og.png"],
   },
 }
 

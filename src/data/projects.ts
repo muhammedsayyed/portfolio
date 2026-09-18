@@ -16,42 +16,42 @@ export type Project = {
   featured?: boolean
 }
 
-// Real portfolio projects — priority order: VEYRA, ORRA, Mira
+// AXIOM Selected Work — presented as studio projects
 // Centralized here for easy future updates of live URLs, descriptions, tech stacks
 export const projects: Project[] = [
   {
     id: "01",
     title: "VEYRA",
-    subtitle: "AI Wellness & Nutrition Platform",
-    category: "Full-Stack / AI Wellness",
+    subtitle: "AI Wellness & Nutrition Platform — AXIOM Concept",
+    category: "Digital Product / AI Platform",
     year: "05/2026 – 08/2026",
     description:
-      "Built a full-stack AI-powered wellness and nutrition platform using React, TypeScript, Node.js, Express, and MongoDB.",
+      "AXIOM concept: a full-stack AI-powered wellness and nutrition platform — personalized guidance, meal planning and fitness tracking in one coherent product.",
     problem:
-      "Users need secure, personalized guidance across nutrition, fitness and daily wellness without fragmented tools or unsafe data handling.",
+      "Wellness tools are fragmented and often handle sensitive health data poorly — users need one trusted, personalized system.",
     solution:
-      "Built REST APIs with JWT authentication, personalized nutrition tracking, recipe discovery, food scanning, fitness tracking, meal planning, pantry & shopping list management, favorites, reviews, contextual AI assistance, server-side AI integration, data validation, rate limiting and user data isolation.",
-    role: "Full-Stack Developer — React, TypeScript, Node.js, Express, MongoDB",
+      "Designed and engineered a cohesive platform with REST APIs, JWT authentication, nutrition tracking, recipe discovery, food scanning, fitness tracking, pantry & shopping management, favorites, reviews and contextual AI assistance — with server-side AI, validation, rate limiting and data isolation.",
+    role: "AXIOM Studio — React, TypeScript, Node.js, Express, MongoDB",
     stack: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
     links: [{ label: "GitHub", href: "https://github.com/muhammedsayyed/VEYRA" }],
     color: "#EAECEE",
-    accent: "#E0583A",
+    accent: "#FF3B30",
     image: "/projects/veyra.png",
     featured: true,
   },
   {
     id: "02",
     title: "ORRA",
-    subtitle: "Premium E-Commerce Platform",
-    category: "Frontend / E-Commerce",
+    subtitle: "Premium E-Commerce Platform — Selected Project",
+    category: "E-Commerce / Web Platform",
     year: "04/2026 – 05/2026",
     description:
-      "Built a premium, responsive e-commerce platform using Next.js, React, TypeScript, and Tailwind CSS, with a reusable component architecture and Zustand for persistent client-side state management.",
+      "AXIOM selected project: a premium, responsive e-commerce platform with a reusable component architecture and persistent client state — built for performance and conversion.",
     problem:
       "Premium commerce needs live catalog data, persistent cart/wishlist state and protected flows without sacrificing responsiveness or SEO.",
     solution:
-      "Integrated live REST APIs for products, categories, brands, authentication, cart, wishlist, search, filtering and checkout workflows. Added protected routes, responsive layouts, Framer Motion interactions, SEO metadata and social sharing optimization with Zustand for client state.",
-    role: "Frontend Developer — Next.js, React, TypeScript, Tailwind CSS",
+      "Engineered live REST API integration for products, categories, brands, auth, cart, wishlist, search, filtering and checkout. Added protected routes, responsive layouts, motion, SEO and social sharing optimization with Zustand for client state.",
+    role: "AXIOM Studio — Next.js, React, TypeScript, Tailwind CSS",
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Zustand", "REST API"],
     links: [{ label: "GitHub", href: "https://github.com/muhammedsayyed/ORRA---Premium-E-Commerce-Platform" }],
     color: "#E8E6F0",
@@ -61,20 +61,20 @@ export const projects: Project[] = [
   {
     id: "03",
     title: "Mira",
-    subtitle: "Social Micro-Blogging Platform",
-    category: "Frontend / Social Platform",
+    subtitle: "Social Micro-Blogging Platform — Selected Project",
+    category: "Digital Product / Social Platform",
     year: "03/2026 – 04/2026",
     description:
-      "Built a responsive social micro-blogging platform using React 18, Vite, Tailwind CSS, and React Router.",
+      "AXIOM selected project: a responsive social micro-blogging platform — real authentication, interactions and media handling against a live API.",
     problem:
-      "Social platforms need real authentication, nested interactions and media handling integrated with a live API, not just static UI.",
+      "Social products need real auth, nested interactions and media handling — not just static UI. Consistency across feeds, profiles and notifications is critical.",
     solution:
-      "Implemented registration, login, JWT authentication, posts, likes, comments, nested replies, reposts, bookmarks, follow relationships, notifications, profile management and media uploads via REST API with Axios. Responsive component-based UI with editorial visual system. Production SPA deployed on Vercel using API rewrites and Vite proxy.",
-    role: "Frontend Developer — React 18, Vite, Tailwind CSS, React Router",
+      "Shipped registration, login and JWT auth, posts, likes, comments, nested replies, reposts, bookmarks, follows, notifications, profile management and media uploads via REST API with Axios. Responsive component architecture and editorial visual system. Deployed on Vercel with API rewrites.",
+    role: "AXIOM Studio — React 18, Vite, Tailwind CSS, React Router",
     stack: ["React.js", "Vite", "Tailwind CSS", "REST API"],
     links: [{ label: "GitHub", href: "https://github.com/muhammedsayyed/Mira---Social-Micro-Blogging-Platform" }],
     color: "#F5F0E8",
-    accent: "#FF532A",
+    accent: "#FF6B35",
     image: "/projects/mira.png",
   },
 ]

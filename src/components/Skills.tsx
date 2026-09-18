@@ -22,13 +22,13 @@ export default function Skills() {
         <div className="flex flex-wrap items-start justify-between gap-6">
           <div>
             <div className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.28em] text-white/60">
-              <span className="size-1.5 bg-[var(--accent)] rounded-full" /> 02 — STACK & PRINCIPLES
+              <span className="size-1.5 bg-[var(--accent)] rounded-full" /> 02 — SERVICES & STACK
             </div>
             <h2 className="mt-4 font-[var(--font-display)] text-[46px] md:text-[72px] leading-[0.85] tracking-[-0.04em]">
-              Tools I <span className="italic font-light text-white/60">think</span> in.
+              What we <span className="italic font-light text-white/60">build</span>.
             </h2>
             <p className="mt-4 max-w-[60ch] font-mono text-[13px] leading-6 text-white/60">
-              No logo grid. Each technology is a material with trade-offs. Hover to read how I actually use it — and what I reach for when it&apos;s not the answer.
+              Six services, one product team. Each service is paired with the stack that powers it — hover to explore how AXIOM delivers.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function Skills() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span
-                      className={`font-[var(--font-display)] text-[26px] md:text-[36px] leading-none tracking-[-0.03em] flex-1 transition-transform ${isActive ? "translate-x-1" : "group-hover:translate-x-1"}`}
+                      className={`font-[var(--font-display)] text-[22px] md:text-[30px] leading-none tracking-[-0.03em] flex-1 transition-transform ${isActive ? "translate-x-1" : "group-hover:translate-x-1"}`}
                     >
                       {s.name}
                       {s.highlight && <span className="ml-2 inline-block size-2 rounded-full align-super bg-[var(--accent)]" />}
@@ -101,13 +101,13 @@ export default function Skills() {
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: -8, opacity: 0 }}
                         transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                        className="font-[var(--font-display)] text-[42px] md:text-[52px] leading-none tracking-[-0.03em] mt-2"
+                        className="font-[var(--font-display)] text-[34px] md:text-[44px] leading-none tracking-[-0.03em] mt-2"
                       >
                         {active.name}
                       </motion.div>
                     </AnimatePresence>
                   </div>
-                  <span className="hidden sm:inline-flex rounded-full bg-[var(--ink)] text-white px-3 py-1.5 font-mono text-[10px] tracking-[0.18em]">FOCUS</span>
+                  <span className="hidden sm:inline-flex rounded-full bg-[var(--ink)] text-white px-3 py-1.5 font-mono text-[10px] tracking-[0.18em]">AXIOM</span>
                 </div>
 
                 <AnimatePresence mode="wait">
@@ -127,29 +127,29 @@ export default function Skills() {
                 <div className="mt-6 h-px bg-[var(--line)]" />
                 <div className="mt-6 grid grid-cols-3 gap-3">
                   <div className="rounded-2xl bg-[var(--paper-2)] border border-[var(--line)] p-4">
-                    <div className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">WHEN I USE IT</div>
-                    <div className="mt-2 font-mono text-xs leading-5 text-[var(--ink-soft)]">Default choice for production UI.</div>
+                    <div className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">APPROACH</div>
+                    <div className="mt-2 font-mono text-xs leading-5 text-[var(--ink-soft)]">Design and build as one, with systems.</div>
                   </div>
                   <div className="rounded-2xl bg-white border border-[var(--line)] p-4">
-                    <div className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">WHEN I DON&apos;T</div>
-                    <div className="mt-2 font-mono text-xs leading-5 text-[var(--ink-soft)]">When a lighter tool wins on constraints.</div>
+                    <div className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">STACK</div>
+                    <div className="mt-2 font-mono text-xs leading-5 text-[var(--ink-soft)]">React · Next.js · TypeScript · Node</div>
                   </div>
                   <div className="rounded-2xl bg-[var(--ink)] text-white p-4">
-                    <div className="font-mono text-[10px] tracking-[0.18em] opacity-60">TRADE-OFF</div>
-                    <div className="mt-2 font-mono text-xs leading-5 opacity-80">Craft vs velocity — I choose intentionally.</div>
+                    <div className="font-mono text-[10px] tracking-[0.18em] opacity-60">OUTCOME</div>
+                    <div className="mt-2 font-mono text-xs leading-5 opacity-80">Precise, performant products.</div>
                   </div>
                 </div>
               </div>
               <div className="bg-[var(--paper-2)] border-t border-[var(--line)] px-7 md:px-8 py-4 flex items-center justify-between font-mono text-xs tracking-widest text-[var(--muted-2)]">
-                <span>SYSTEM THINKING</span>
-                <span className="hidden sm:inline">TYPE-SAFE • A11Y • PERFORMANT</span>
+                <span>AXIOM STACK</span>
+                <span className="hidden sm:inline">REACT · NEXT.JS · NODE · PYTHON</span>
                 <span className="size-2 rounded-full bg-[var(--accent)]" />
               </div>
             </div>
             <div className="mt-4 rounded-[20px] border border-white/10 bg-white/[0.06] p-4 flex items-center gap-3 font-mono text-xs text-white/70">
-              <span className="size-8 rounded-full bg-white text-[var(--ink)] grid place-items-center">◎</span>
+              <span className="size-8 rounded-full bg-white text-[var(--ink)] grid place-items-center">⬢</span>
               <span>
-                <span className="text-white">Tip:</span> On desktop hover the list. On mobile tap.
+                <span className="text-white">AXIOM Stack:</span> React, Next.js, TypeScript, Node.js, Python, PostgreSQL, MongoDB, REST, GraphQL, GSAP, Figma.
               </span>
             </div>
           </div>
