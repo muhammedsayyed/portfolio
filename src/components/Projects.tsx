@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { projects } from "@/data/projects"
@@ -7,6 +7,26 @@ import ProjectCard from "./ProjectCard"
 
 export default function Projects() {
   const ref = useRef<HTMLElement>(null)
+  const [current, setCurrent] = useState(0)
+  const total = projects.length
+
+  const prev = useCallback(() => setCurrent((c) => (c - 1 + total) % total), [total])
+  const next = useCallback(() => setCurrent((c) => (c + 1) % total), [total])
+
+  // Keyboard navigation (left/right arrows) when section is in view
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      const section = ref.current
+      if (!section) return
+      const rect = section.getBoundingClientRect()
+      const inView = rect.top < window.innerHeight && rect.bottom > 0
+      if (!inView) return
+      if (e.key === "ArrowLeft") { e.preventDefault(); prev() }
+      if (e.key === "ArrowRight") { e.preventDefault(); next() }
+    }
+    window.addEventListener("keydown", handleKey)
+    return () => window.removeEventListener("keydown", handleKey)
+  }, [prev, next])
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -39,36 +59,82 @@ export default function Projects() {
           </div>
           <div data-work-header className="lg:max-w-[48ch]">
             <p className="font-mono text-[13px] leading-6 text-[var(--muted-2)]">
-              Three production projects — VEYRA, ORRA and Mira. Full-stack and frontend work with real APIs, auth and deployments. Data centralized in{" "}
+              Production projects — full-stack and frontend work with real APIs, auth and deployments. Data centralized in{" "}
               <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">src/data/projects.ts</span> & <span className="bg-[var(--ink)] text-white px-1.5 py-0.5 rounded">src/data/site.ts</span>.
             </p>
             <div className="mt-4 flex flex-wrap gap-2 font-mono text-[11px] tracking-[0.14em]">
-              <span className="rounded-full border border-[var(--line)] bg-white px-3 py-1">3 PROJECTS</span>
-              <span className="rounded-full bg-[var(--ink)] text-white px-3 py-1">03/2026 — 08/2026</span>
-              <span className="rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-3 py-1 text-[var(--muted-2)]">GITHUB LINKED</span>
+              <span className="rounded-full border border-[var(--line)] bg-white px-3 py-1">{projects.length} PROJECTS</span>
+              <span className="rounded-full bg-[var(--ink)] text-white px-3 py-1">2025 — 2026</span>
+              <span className="rounded-full border border-[var(--line)] bg-[var(--paper-2)] px-3 py-1 text-[var(--muted-2)]">LIVE DEMOS</span>
             </div>
           </div>
         </div>
 
         <div data-work-header className="mt-8 h-px bg-[var(--ink)] origin-left" />
 
-        <div className="mt-10 md:mt-12 space-y-10 md:space-y-14">
-          {projects.map((p, i) => (
-            <ProjectCard key={p.id} project={p} index={i} total={projects.length} />
-          ))}
+        {/* Single project card */}
+        <div className="mt-10 md:mt-12">
+          <ProjectCard key={projects[current].id} project={projects[current]} index={current} total={total} />
+        </div>
+
+        {/* Navigation — below the card, clear and polished */}
+        <div className="mt-8 flex items-center justify-center gap-6">
+          {/* Prev arrow */}
+          <button
+            type="button"
+            onClick={prev}
+            className="size-12 md:size-14 rounded-full bg-[var(--ink)] text-white grid place-items-center text-lg md:text-xl hover:bg-black hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-md"
+            aria-label="Previous project"
+          >
+            ←
+          </button>
+
+          {/* Center: counter + dots */}
+          <div className="flex flex-col items-center gap-3">
+            <div className="font-mono text-sm tracking-[0.2em] text-[var(--ink)]">
+              <span className="font-semibold">{String(current + 1).padStart(2, "0")}</span>
+              <span className="mx-2 text-[var(--muted)]">/</span>
+              <span className="text-[var(--muted)]">{String(total).padStart(2, "0")}</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              {projects.map((_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => setCurrent(i)}
+                  className={`rounded-full transition-all duration-300 cursor-pointer ${
+                    i === current
+                      ? "w-7 h-2.5 bg-[var(--ink)]"
+                      : "size-2.5 bg-[var(--line-strong)] hover:bg-[var(--muted)]"
+                  }`}
+                  aria-label={`Go to project ${i + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Next arrow */}
+          <button
+            type="button"
+            onClick={next}
+            className="size-12 md:size-14 rounded-full bg-[var(--ink)] text-white grid place-items-center text-lg md:text-xl hover:bg-black hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-md"
+            aria-label="Next project"
+          >
+            →
+          </button>
         </div>
 
         <div className="mt-12 rounded-[24px] border border-dashed border-[var(--line-strong)] bg-[var(--paper-2)] p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.2em] text-[var(--muted)]">UPDATING PROJECTS</div>
-            <div className="mt-2 font-[var(--font-display)] text-[22px] leading-tight">Live URLs easy to add later.</div>
+            <div className="font-mono text-[11px] tracking-[0.2em] text-[var(--muted)]">SELECTED WORK</div>
+            <div className="mt-2 font-[var(--font-display)] text-[22px] leading-tight">Real projects, live demos.</div>
             <div className="mt-1 font-mono text-xs leading-5 text-[var(--muted-2)] max-w-[60ch]">
-              Update <span className="font-medium text-[var(--ink)]">src/data/site.ts</span> & <span className="font-medium text-[var(--ink)]">src/data/projects.ts</span> — add Vercel URL to <span className="font-mono bg-white px-1 rounded border">links</span>. GitHub links are already live.
+              Each project above includes a live demo link. Click <span className="font-mono bg-white px-1 rounded border">LIVE DEMO</span> to explore.
             </div>
           </div>
           <div className="flex flex-wrap gap-2">
-            <span className="rounded-full bg-white border border-[var(--line)] px-4 py-2 font-mono text-xs tracking-widest">3 REAL PROJECTS</span>
-            <span className="rounded-full bg-[var(--ink)] text-white px-4 py-2 font-mono text-xs tracking-widest">CENTRALIZED DATA</span>
+            <span className="rounded-full bg-white border border-[var(--line)] px-4 py-2 font-mono text-xs tracking-widest">{projects.length} PROJECTS</span>
+            <span className="rounded-full bg-[var(--ink)] text-white px-4 py-2 font-mono text-xs tracking-widest">LIVE DEMOS</span>
           </div>
         </div>
       </div>

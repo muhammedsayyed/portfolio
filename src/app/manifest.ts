@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Muhammed Sayed — Junior Front-End Developer',
     short_name: 'Muhammed Sayed',
     description:
-      'Junior Front-End Developer and UI/UX Designer — React.js, Next.js, TypeScript, Tailwind CSS, Figma. Giza, Egypt. Projects: VEYRA, ORRA, Mira.',
+      'Junior Front-End Developer and UI/UX Designer — React.js, Next.js, TypeScript, Tailwind CSS, Figma. Giza, Egypt. Full-stack and frontend production projects with live demos.',
     start_url: '/',
     display: 'standalone',
     background_color: '#fcfcf9',

@@ -223,7 +223,7 @@ export default function ProjectCard({
 
             <div className="mt-auto pt-6 flex items-center justify-between border-t border-dashed border-[var(--line)] font-mono text-[11px] tracking-[0.18em] text-[var(--muted)]">
               <span>
-                0{index + 1} — 0{total}
+                {String(index + 1).padStart(2, "0")} — {String(total).padStart(2, "0")}
               </span>
               <span className="hidden sm:inline">CRAFTED INTERFACE • {project.year}</span>
               <span className="size-2 rounded-full" style={{ background: project.accent }} />

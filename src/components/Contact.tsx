@@ -115,7 +115,7 @@ export default function Contact() {
                   e.preventDefault()
                   const fd = new FormData(e.currentTarget as HTMLFormElement)
                   const msg = fd.get("message") as string
-                  window.location.href = `mailto:${email}?subject=Portfolio%20Inquiry&body=${encodeURIComponent(msg || "")}`
+                  window.open(`https://wa.me/2010124444365?text=${encodeURIComponent(msg || "")}`, "_blank")
                 }}
                 className="mt-4"
               >
@@ -128,9 +128,9 @@ export default function Contact() {
                   className="mt-2 w-full rounded-2xl border border-[var(--line)] bg-white px-4 py-3 font-mono text-sm outline-none focus:border-[var(--ink)] focus:ring-2 focus:ring-[var(--ink)]/10 resize-none"
                 />
                 <button type="submit" className="mt-3 w-full rounded-full bg-[var(--ink)] text-white py-3 font-mono text-xs tracking-[0.18em] hover:bg-black transition">
-                  OPEN IN EMAIL →
+                  CONTACT ME →
                 </button>
-                <p className="mt-2 font-mono text-[11px] leading-4 text-[var(--muted)]">Uses your mail client — no backend required.</p>
+                <p className="mt-2 font-mono text-[11px] leading-4 text-[var(--muted)]">Opens WhatsApp — send your message directly.</p>
               </form>
             </div>
           </div>
